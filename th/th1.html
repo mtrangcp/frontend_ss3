@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>btap th</title>
+  </head>
+
+  <body>
+    <form action="">
+      <h3>Thêm mới nhân viên</h3>
+      <div>
+        <label for="ten">Họ và tên: </label>
+        <input type="text" name="ten" id="ten" required autofocus />
+      </div>
+      <br />
+      <div>
+        <label for="date">Ngày sinh: </label>
+        <input type="date" name="date" id="date" required />
+      </div>
+      <br />
+      <div>
+        <label for="month">Tháng năm: </label>
+        <input type="month" name="month" id="month" />
+      </div>
+      <br />
+      <div>
+        <label for="time">Thời gian: </label>
+        <input type="time" name="time" id="time" />
+      </div>
+      <br />
+      <div>
+        <label for="sex">Giới tính: </label>
+        <input checked type="radio" name="sex" id="Male" value="Male" />
+        <label for="Male">Nam</label>
+        <input type="radio" name="sex" id="Female" value="Female" />
+        <label for="Female">Nữ</label>
+        <input type="radio" name="sex" id="Male" value="Male" />
+        <label for="BD">Khác</label>
+      </div>
+      <br />
+      <div>
+        <label for="emal">Email: </label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <br />
+
+      <div>
+        <label for="pass">Mật khẩu: </label>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          required
+          minlength="8"
+          placeholder="12345678"
+        />
+      </div>
+      <br />
+
+      <div>
+        <label for="introduce">Giới thiệu bản thân: </label><br />
+        <textarea
+          style="width: 400px"
+          name="introduce"
+          id="introduce"
+        ></textarea>
+      </div>
+      <br />
+
+      <div>
+        <label for="city">Thành phố: </label>
+        <select name="city" id="city" multiple>
+          <option value="hcm">Hồ Chí Minh</option>
+          <option value="hà nội" selected>Hà Nội</option>
+          <option value="cần thơ">Cần Thơ</option>
+        </select>
+      </div>
+      <br />
+
+      <!-- <div>
+        <label for="file-upload">
+          Hình ảnh
+          <input type="file" id="file-upload" style="display: none" />
+        </label>
+      </div> -->
+
+      <div>
+        <label for="file-upload"> Hình ảnh </label>
+        <input type="file" id="file-upload" />
+      </div>
+      <br />
+
+      <div>
+        <label for="hobby">Sở thích</label>
+        <input type="checkbox" name="hobby" id="hobby" />
+        <label for="hobby">Code</label>
+        <input type="checkbox" name="hobby" id="hobby" />
+        <label for="hobby">Chơi game</label>
+        <input type="checkbox" name="hobby" id="hobby" />
+        <label for="hobby">Bơi lội</label>
+        <input type="checkbox" name="hobby" id="hobby" />
+        <label for="hobby">Đá bóng</label>
+      </div>
+      <br />
+
+      <div>
+        <label for="progress">Tiến độ hoàn thành công việc</label>
+        <input type="range" min="1" max="10" step="1" id="progress" />
+      </div>
+      <br />
+
+      <div>
+        <label for="yearExp">Năm kinh nghiệm</label>
+        <input type="number" min="1" max="10" step="1" id="yearExp" />
+      </div>
+      <br />
+
+      <div>
+        <label for="search">Tìm kiếm</label>
+        <input type="search" id="search" placeholder="Tìm kiếm" />
+      </div>
+      <br />
+
+      <div>
+        <label for="color">Màu sắc ưa thích</label>
+        <input type="color" id="color" />
+      </div>
+      <br />
+
+      <button type="reset">Hủy</button>
+      <button type="reset">Làm mới</button>
+      <button type="submit">Gửi</button>
+    </form>
+  </body>
+</html>
